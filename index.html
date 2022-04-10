@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Genesis</title>
+  </head>
+  <body>
+    <div class="main-game">
+      <div class="genius">
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="green"></div>
+      </div>
+    </div>
+    <div class="modal-wrapper">
+      <div class="modal">
+        <h2>Bem vindo ao Jogo Genius!</h2>
+        <p>Iniciando novo jogo!</p>
+        <button class="go" onclick="goGame()">OK</button>
+      </div>
+    </div>
+    <div class="modal-wrapper lose">
+      <div class="modal">
+        <h2>Infelizmente você perdeu!</h2>
+        <p>Sua ponturação foi:</p>
+        <p id="point"></p>
+        <button class="restart">Reiniciar jogo</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
+

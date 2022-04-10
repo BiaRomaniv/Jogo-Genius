@@ -1,0 +1,124 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap";
+
+body {
+  margin: 0;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.main-game {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.genius {
+  display: grid;
+  grid-template-areas:
+    "verde vermelho"
+    "amarelo azul";
+  grid-gap: 10px;
+  border: 1px solid #96c5b0;
+  background-color: #ffffff;
+  border-radius: 100%;
+  width: 500px;
+  height: 500px;
+}
+
+.blue {
+  grid-area: azul;
+  background-color: rgb(17, 0, 255);
+  border-bottom-right-radius: 100%;
+  border-color: rgb(17, 0, 255);
+}
+
+.red {
+  grid-area: vermelho;
+  background-color: rgb(255, 0, 0);
+  border-top-right-radius: 100%;
+  border-color: rgb(255, 0, 0);
+}
+
+.yellow {
+  grid-area: amarelo;
+  background-color: rgb(255, 217, 0);
+  border-bottom-left-radius: 100%;
+  border-color: rgb(255, 217, 0);
+}
+
+.green {
+  grid-area: verde;
+  background-color: rgb(21, 255, 0);
+  border-top-left-radius: 100%;
+  border-color: rgb(21, 255, 0);
+}
+
+.selected {
+  opacity: 0.6;
+}
+
+.blue.selected {
+  border: 1px solid rgb(15, 0, 71);
+}
+
+.red.selected {
+  border: 1px solid rgb(73, 0, 0);
+}
+
+.yellow.selected {
+  border: 1px solid rgb(94, 95, 0);
+}
+
+.green.selected {
+  border: 1px solid rgb(10, 63, 0);
+}
+
+/* MODAL */
+.modal-wrapper.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  background: rgba(4, 9, 17, 0.8);
+
+  visibility: hidden;
+  opacity: 100;
+}
+
+.modal-wrapper .modal {
+  width: min(500px, 90%);
+  margin: auto;
+  background-color: pink;
+  border-radius: 100%;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 3.1rem 0;
+}
+
+.modal-wrapper button {
+  width: 200px;
+  height: 30px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.modal-wrapper button:hover {
+  background-color: rgb(230, 45, 76);
+  color: #ffffff;
+  cursor: pointer;
+}
